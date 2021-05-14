@@ -19,5 +19,5 @@ Aria2 - CLI Metalink/BitTorrent Client
 
 引用
 --------
-https://github.com/aria2/aria2
-https://github.com/mayswind/AriaNg/
+    https://github.com/aria2/aria2
+    https://github.com/mayswind/AriaNg/
