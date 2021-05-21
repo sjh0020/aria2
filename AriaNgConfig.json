@@ -1,5 +1,6 @@
 {
   "language": "zh_Hans",
+  "theme": "dark",
   "title": "${downspeed}, ${upspeed} - ${title}",
   "titleRefreshInterval": 3000,
   "browserNotification": false,
@@ -10,14 +11,37 @@
   "protocol": "http",
   "httpMethod": "POST",
   "secret": "",
-  "extendRpcServers": [],
+  "extendRpcServers": [
+    {
+      "rpcAlias": "",
+      "rpcHost": "localhost",
+      "rpcPort": "6800",
+      "rpcInterface": "jsonrpc",
+      "protocol": "https",
+      "httpMethod": "POST",
+      "secret": "",
+      "rpcId": "QXJpYU5nXzE2MjE2MTk5OTVfMC4wMTU3OTkwNDY0Nzk1MDE0Nzc="
+    },
+    {
+      "rpcAlias": "",
+      "rpcHost": "localhost",
+      "rpcPort": "6800",
+      "rpcInterface": "jsonrpc",
+      "protocol": "wss",
+      "httpMethod": "POST",
+      "secret": "",
+      "rpcId": "QXJpYU5nXzE2MjE2MTk5NjdfMC40MzI4OTM0MDQyMjYzMDg4NA=="
+    }
+  ],
   "globalStatRefreshInterval": 1000,
   "downloadTaskRefreshInterval": 1000,
+  "swipeGesture": true,
+  "dragAndDropTasks": true,
   "rpcListDisplayOrder": "recentlyUsed",
   "afterCreatingNewTask": "task-list",
-  "removeOldTaskAfterRetrying": false,
-  "confirmTaskRemoval": true,
-  "includePrefixWhenCopyingFromTaskDetails": true,
+  "removeOldTaskAfterRetrying": true,
+  "confirmTaskRemoval": false,
+  "includePrefixWhenCopyingFromTaskDetails": false,
   "afterRetryingTask": "task-list-downloading",
   "displayOrder": "default:asc",
   "fileListDisplayOrder": "default:asc",
