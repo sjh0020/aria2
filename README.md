@@ -2,7 +2,7 @@ Aria2 - CLI Metalink/BitTorrent Client
 ========
 </div>
 
-[![GitHub Stars](https://img.shields.io/github/stars/sjh0020/aria2/badge/<star>-<1k>-<brightgreen>)](https://github.com/sjh0020/aria2/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/sjh0020/aria2?style=flat&logo=appveyor)](https://github.com/sjh0020/aria2/stargazers)
 
 ## 目录
 
