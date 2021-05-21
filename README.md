@@ -3,6 +3,7 @@ Aria2 - CLI Metalink/BitTorrent Client
 </div>
 
 [![GitHub Stars](https://img.shields.io/github/stars/sjh0020/aria2?style=flat&logo=appveyor)](https://github.com/sjh0020/aria2/stargazers)
+![GitHub Release (latest SemVer)](https://img.shields.io/github/v/release/sjh0020/aria2?style=flat-square)
 
 ## 目录
 
