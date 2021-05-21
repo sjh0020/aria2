@@ -1,0 +1,26 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "decode.js", "add.js" ]
+   },
+   "browser_action": {
+      "default_title": "暂停/启用"
+   },
+   "description": "把下载添加到aria2",
+   "homepage_url": "http://blog.ghostry.cn/",
+   "icons": {
+      "128": "icon.png",
+      "16": "icon.png",
+      "19": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgECM6s1mLdY/mD9h+tdwQmLBTb2wwQn52PNIkBrxNyDnHsz5mH29KFSSvGAsC3ZEg96Pad1whBztmKi2id2D5LVju8xIqOjsO59GplTdGV9nrMLOCVxcpKRRKSQFoVhLb2A1iP0KFtcRWYWupic+fcgieP1ZnWTdxoIDGvmenmuOLWy8045CtvBiQznQwePUzfieNL05erf19wWZmhNmgCqTgK2e3Tq62gjshRGiGJb3ot7CJGz2XA0t8eR+AvD/GEOgrD+DxT/B5Qdo4zS1A0lYEsvmTKikGxq8LV97Y+iiUieCuVdcDPPaaCN8xKgVP5ug3My1vSolkwcFB3XgkQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "26.0.1428",
+   "name": "添加到aria2",
+   "options_page": "options.html",
+   "permissions": [ "downloads", "http://*/", "notifications", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.7"
+}
