@@ -10,12 +10,16 @@ Aria2 - CLI Metalink/BitTorrent Client
 - 请在必要时对aria2主程序和aria2Ng进行更新
 - 使用前用记事本打开 aria.conf 修改默认配置
 - 关于插件如何添加到浏览器中请自行百度，理论只要是chrome内核浏览器都可以添加插件
+- AriaNgConfig.json使用方法
+![导入AriaNgConfig.json](docs/img/inputAriaNgConfig.json.png)
 ## 文件说明
 ------------------
 
 Aria2Data      下载目录 默认下载文件保存位置
 
 aria2.conf     配置文件 可以自己根据说明修改
+
+AriaNgConfig.json  AriaNg参考配置文件
 
 aria2.exe      启动文件 使用这个来启动 aria2
 
