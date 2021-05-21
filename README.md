@@ -1,7 +1,19 @@
 Aria2 - CLI Metalink/BitTorrent Client
 ========
+</div>
 
-## 使用说明
+[目录]
+
+<!-- TOC depthFrom:2 -->
+
+- [使用说明](#1-使用说明)
+- [文件说明](#2-文件说明)
+- [配置相关](#3-配置相关)
+- [引用](#4-引用)
+
+<!-- /TOC -->
+
+## 1. 使用说明
 --------
 - **运行 “aria2.exe” 或 “AriaNg启动器.exe”**
 - 由于aria开始时通过命令行管理，如果熟悉命令行的可以自行通过cmd添加下载
@@ -12,7 +24,7 @@ Aria2 - CLI Metalink/BitTorrent Client
 - 关于插件如何添加到浏览器中请自行百度，理论只要是chrome内核浏览器都可以添加插件
 - AriaNgConfig.json使用方法
 ![导入AriaNgConfig.json](docs/img/inputAriaNgConfig.json.png)
-## 文件说明
+## 2. 文件说明
 ------------------
 
 Aria2Data      下载目录 默认下载文件保存位置
@@ -29,7 +41,7 @@ aria2c.exe     命令行主程序
 
 **README.md      README**
 
-## 帮助
+## 3. 配置相关
 ---------
 [配置教程](https://zhuanlan.zhihu.com/p/37021947)
 
@@ -42,7 +54,7 @@ aria2c.exe     命令行主程序
 [完整列表](https://trackerslist.com/all_aria2.txt)
 
 [HTTP(S)列表](https://trackerslist.com/http_aria2.txt)
-## 引用
+## 4. 引用
 --------
 [aria2主程序](https://github.com/aria2/aria2)
 
