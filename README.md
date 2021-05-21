@@ -24,7 +24,7 @@ Aria2 - CLI Metalink/BitTorrent Client
 ---------
      配置教程：           https://zhuanlan.zhihu.com/p/37021947
 	 Aria2 配置说明       http://aria2c.com/usage.html
-	 Aira2 BT Tracke     精选列表：https://trackerslist.com/best_aria2.txt
+	 Aira2 BT Tracke      精选列表：https://trackerslist.com/best_aria2.txt
                           完整列表：https://trackerslist.com/all_aria2.txt
                           HTTP(S)列表：https://trackerslist.com/http_aria2.txt
 引用
