@@ -1,6 +1,5 @@
 Aria2 - CLI Metalink/BitTorrent Client
 ========
-</div>
 
 [![GitHub Stars](https://img.shields.io/github/stars/sjh0020/aria2?style=flat&logo=appveyor)](https://github.com/sjh0020/aria2/stargazers)
 ![GitHub Release (latest SemVer)](https://img.shields.io/github/v/release/sjh0020/aria2?style=flat&logo=appveyor)
@@ -17,9 +16,10 @@ Aria2 - CLI Metalink/BitTorrent Client
 <!-- /TOC -->
 
 ## 1. 使用说明
+
 --------
 - **运行 “aria2.exe” 或 “AriaNg启动器.exe”**
-- 由于aria开始时通过命令行管理，如果熟悉命令行的可以自行通过cmd添加下载
+- 由于aria开始时通过`命令行管理`，如果熟悉命令行的可以自行通过cmd添加下载
 - 如果不熟悉的建议直接运行AriaNg启动器.exe可直接打开默认浏览器进行下载管理,由于本合集整合了懒人版，启动程序后可通过系统托盘显示/隐藏aria2的命令行界面（可直接查看下载进度）
 - 下载后的文件默认保存在 Aria2Data 文件夹中
 - 请在必要时对aria2主程序和aria2Ng进行更新
@@ -57,13 +57,15 @@ aria2c.exe     命令行主程序
 [完整列表](https://trackerslist.com/all_aria2.txt)
 
 [HTTP(S)列表](https://trackerslist.com/http_aria2.txt)
+
 ## 4. 引用
+
 --------
 [aria2主程序](https://github.com/aria2/aria2)
 
 [AriaNg](https://github.com/mayswind/AriaNg/)
-    
- [Aira2 BT Tracker：每天更新！全网热门 BitTorrent Tracker 列表](https://trackerslist.com/#/zh) 
+
+[Aira2 BT Tracker：每天更新！全网热门 BitTorrent Tracker 列表](https://trackerslist.com/#/zh) 
 
 
 
