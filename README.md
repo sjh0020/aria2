@@ -1,5 +1,4 @@
-Aria2 - CLI Metalink/BitTorrent Client
-========
+# Aria2 - CLI Metalink/BitTorrent Client
 
 [![GitHub Stars](https://img.shields.io/github/stars/sjh0020/aria2?style=flat&logo=appveyor)](https://github.com/sjh0020/aria2/stargazers)
 ![GitHub Release (latest SemVer)](https://img.shields.io/github/v/release/sjh0020/aria2?style=flat&logo=appveyor)
@@ -12,12 +11,12 @@ Aria2 - CLI Metalink/BitTorrent Client
 - [文件说明](#2-文件说明)
 - [配置相关](#3-配置相关)
 - [引用](#4-引用)
+- [高手进阶](#5-高手进阶)
 
 <!-- /TOC -->
 
 ## 1. 使用说明
 
---------
 - **运行 “aria2.exe” 或 “AriaNg启动器.exe”**
 - 由于aria开始时通过`命令行管理`，如果熟悉命令行的可以自行通过cmd添加下载
 - 如果不熟悉的建议直接运行AriaNg启动器.exe可直接打开默认浏览器进行下载管理,由于本合集整合了懒人版，启动程序后可通过系统托盘显示/隐藏aria2的命令行界面（可直接查看下载进度）
@@ -28,7 +27,6 @@ Aria2 - CLI Metalink/BitTorrent Client
 - AriaNgConfig.json使用方法
 ![导入AriaNgConfig.json](docs/img/inputAriaNgConfig.json.png)
 ## 2. 文件说明
-------------------
 
 Aria2Data      下载目录 默认下载文件保存位置
 
@@ -45,7 +43,7 @@ aria2c.exe     命令行主程序
 **README.md      README**
 
 ## 3. 配置相关
----------
+
 [配置教程](https://zhuanlan.zhihu.com/p/37021947)
 
 [Aria2 配置说明](http://aria2c.com/usage.html)
@@ -60,7 +58,6 @@ aria2c.exe     命令行主程序
 
 ## 4. 引用
 
---------
 [aria2主程序](https://github.com/aria2/aria2)
 
 [AriaNg](https://github.com/mayswind/AriaNg/)
@@ -68,4 +65,13 @@ aria2c.exe     命令行主程序
 [Aira2 BT Tracker：每天更新！全网热门 BitTorrent Tracker 列表](https://trackerslist.com/#/zh) 
 
 
+## 5. 高手进阶
 
+目前P3TERX大佬接手aria2，有docker的可以尝试使用由P3TERX编写的[aria2-pro](https://p3terx.com/archives/docker-aria2-pro.html)     [源码仓库](https://github.com/P3TERX/Aria2-Pro-Docker)
+
+相关博客链接：
+- [Aria2 Pro - 更好用的 Aria2 Docker 容器镜像](https://p3terx.com/archives/docker-aria2-pro.html)
+- [docker镜像下载](https://hub.docker.com/r/p3terx/aria2-pro)
+- [Rclone 安装配置教程](https://p3terx.com/archives/rclone-installation-and-configuration-tutorial.html)
+- [Watchtower - 自动更新 Docker 镜像与容器](https://p3terx.com/archives/docker-watchtower.html)
+- [Aria2 前端面板 ( GUI、WebUI ) AriaNg 使用教程](https://p3terx.com/archives/aria2-frontend-ariang-tutorial.html)  个人推荐使用[AriaNg单文件版AllInOne](https://github.com/mayswind/AriaNg/releases/latest)
