@@ -15,6 +15,7 @@
 
 <!-- /TOC -->
 
+
 ## 1. 使用说明
 
 - **运行 “aria2.exe” 或 “AriaNg启动器.exe”**
@@ -71,7 +72,43 @@ aria2c.exe     命令行主程序
 
 相关博客链接：
 - [Aria2 Pro - 更好用的 Aria2 Docker 容器镜像](https://p3terx.com/archives/docker-aria2-pro.html)
+- [群晖 NAS Docker 进阶教程 - 部署全能下载工具 Aria2 Pro](https://p3terx.com/archives/synology-nas-docker-advanced-tutorial-deploy-aria2-pro.html)
 - [docker镜像下载](https://hub.docker.com/r/p3terx/aria2-pro)
 - [Rclone 安装配置教程](https://p3terx.com/archives/rclone-installation-and-configuration-tutorial.html)
-- [Watchtower - 自动更新 Docker 镜像与容器](https://p3terx.com/archives/docker-watchtower.html)
+- [Watchtower - 自动更新 Docker 镜像与容器](https://p3terx.com/archives/docker-watchtower.html)(tips:该文章watchtower版本为1.24，而目前镜像最新版本为1.25，默认自动更新时间为1天一次)
 - [Aria2 前端面板 ( GUI、WebUI ) AriaNg 使用教程](https://p3terx.com/archives/aria2-frontend-ariang-tutorial.html)  个人推荐使用[AriaNg单文件版AllInOne](https://github.com/mayswind/AriaNg/releases/latest)
+
+### 关于Windows下使用docker部署aria2-pro
+#### 安装docker
+新手使用请参考[官方安装教程](https://docs.docker.com/desktop/windows/install/)
+[下载](https://desktop.docker.com/win/stable/amd64/Docker%20Desktop%20Installer.exe)
+[官方网页](https://hub.docker.com/)
+确保电脑支持虚拟化且是开启状态
+![](docs/img/虚拟化.png)
+很多网上教程说打开程序中Hyper-V,但是好像安装程序会自动打开，如果报错则手动在控制面板程序中开启
+![](docs/img/hyper.png)
+提示需WSL 2时请按照微软官方教程安装，建议下载Ubuntu20.04LTS
+#### 部署aria2-pro
+详细参考p3terx写的[教程](https://p3terx.com/archives/docker-aria2-pro.html)，但是代码演示示例适用于Linux，直接照搬会报错，把 \ 直接用空格代替，不回车直接写下一行代码
+部署示例(请直接复制到cmd)：
+> docker run -d --name aria2-pro --restart unless-stopped --log-opt max-size=1m -e RPC_PORT=6800 -p6800:6800 -p 6888:6888 -p 6888:6888/udp -v D:\Download\aria2\conf:/config -v D:\Download\aria2:/downloads -e UMASK_SET=000 p3terx/aria2-pro
+
+需要注意这里文件下载位置在_D:\Download\aria2_，而且一旦设置后使用aria2的下载位置无法变更，设置RPC地址时只能使用_/downloads_，且记得填写RPC密码为P3TERX(自定义请参考教程)
+两个-v 的参数只能改在 : 之前的路径，不懂请百度docker目录映射
+
+#### ariang
+直接使用单文件版，填写相应设置
+![](docs/img/ariang.png)
+
+以上方法部署后有三种查看下载的方式，打开ariang查看，打开docker desktop点击aria2-pro，但速度很慢，所以推荐使用cmd输入命令
+新建快捷方式
+> C:\Windows\System32\cmd.exe /k docker logs -f --tail 100 aria2-pro
+![](docs/img/new.png)
+
+tips:这种方法比这个懒人合集的托盘查看进度较不实时美观，每隔几10秒刷新一次，一次很多行
+
+#### 自动更新容器
+[watchtower](https://p3terx.com/archives/docker-watchtower.html)
+部署示例：
+
+> docker run -d --name watchtower --restart unless-stopped -v D:\software\watchtower\docker.sock:/var/run/docker.sock containrrr/watchtower -c
