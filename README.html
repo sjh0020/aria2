@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Docutils 0.15.2: http://docutils.sourceforge.net/" />
+<meta name="generator" content="Docutils 0.16: http://docutils.sourceforge.net/" />
 <title>aria2 - The ultra fast download utility</title>
 <style type="text/css">
 
@@ -713,7 +713,7 @@ libraries.</p>
 <h1>Cross-compiling Android binary</h1>
 <p>In this section, we describe how to build Android binary using Android
 NDK cross-compiler on Debian Linux.</p>
-<p>At the time of this writing, Android NDK r20 should compile aria2
+<p>At the time of this writing, Android NDK r21e should compile aria2
 without errors.</p>
 <p><tt class="docutils literal"><span class="pre">android-config</span></tt> script is a configure script wrapper for Android
 build.  We use it to create official Android build.  This script
@@ -730,7 +730,7 @@ library and enable only static library. We are going to link those
 libraries statically.</p>
 <p><tt class="docutils literal"><span class="pre">android-config</span></tt> assumes that <tt class="docutils literal">$ANDROID_HOME</tt> and <tt class="docutils literal">$NDK</tt>
 environment variables are defined.</p>
-<p>We currently use Android NDK r20.  <tt class="docutils literal">$NDK</tt> should point to the
+<p>We currently use Android NDK r21e.  <tt class="docutils literal">$NDK</tt> should point to the
 directory to Anroid NDK.  The build tools will be found under
 <tt class="docutils literal"><span class="pre">$NDK/toolchains/llvm/prebuilt/linux-x86_64/bin/</span></tt>.</p>
 <p>All the dependent libraries must be installed under
