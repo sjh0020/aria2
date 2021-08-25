@@ -84,9 +84,13 @@ aria2c.exe     命令行主程序
 [下载](https://desktop.docker.com/win/stable/amd64/Docker%20Desktop%20Installer.exe)
 [官方网页](https://hub.docker.com/)
 确保电脑支持虚拟化且是开启状态
+
 ![](docs/img/虚拟化.png)
+
 很多网上教程说打开程序中Hyper-V,但是好像安装程序会自动打开，如果报错则手动在控制面板程序中开启
+
 ![](docs/img/hyper.png)
+
 提示需WSL 2时请按照微软官方教程安装，建议下载Ubuntu20.04LTS
 #### 部署aria2-pro
 详细参考p3terx写的[教程](https://p3terx.com/archives/docker-aria2-pro.html)，但是代码演示示例适用于Linux，直接照搬会报错，把 \ 直接用空格代替，不回车直接写下一行代码
