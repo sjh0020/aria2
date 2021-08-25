@@ -26,7 +26,9 @@
 - 使用前用记事本打开 aria.conf 修改默认配置
 - 关于插件如何添加到浏览器中请自行百度，理论只要是chrome内核浏览器都可以添加插件
 - AriaNgConfig.json使用方法
+
 ![导入AriaNgConfig.json](docs/img/inputAriaNgConfig.json.png)
+
 ## 2. 文件说明
 
 Aria2Data      下载目录 默认下载文件保存位置
@@ -109,6 +111,7 @@ aria2c.exe     命令行主程序
 > C:\Windows\System32\cmd.exe /k docker logs -f --tail 100 aria2-pro
 
 ![](docs/img/new.png)
+
 tips:这种方法比这个懒人合集的托盘查看进度较不实时美观，每隔几10秒刷新一次，一次很多行
 
 #### 自动更新容器
