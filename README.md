@@ -103,8 +103,8 @@ aria2c.exe     命令行主程序
 以上方法部署后有三种查看下载的方式，打开ariang查看，打开docker desktop点击aria2-pro，但速度很慢，所以推荐使用cmd输入命令
 新建快捷方式
 > C:\Windows\System32\cmd.exe /k docker logs -f --tail 100 aria2-pro
-![](docs/img/new.png)
 
+![](docs/img/new.png)
 tips:这种方法比这个懒人合集的托盘查看进度较不实时美观，每隔几10秒刷新一次，一次很多行
 
 #### 自动更新容器
