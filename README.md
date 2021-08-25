@@ -111,4 +111,5 @@ tips:这种方法比这个懒人合集的托盘查看进度较不实时美观，
 [watchtower](https://p3terx.com/archives/docker-watchtower.html)
 部署示例：
 
-> docker run -d --name watchtower --restart unless-stopped -v D:\software\watchtower\docker.sock:/var/run/docker.sock containrrr/watchtower -c
+将下列代码复制到Ubuntu Shell，如果按照微软教程安装Windows Terminal可以按住Shift右键，选择在此打开Linux Shell(L)
+> docker run -d --name watchtower-dev --restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower:latest-dev -c
