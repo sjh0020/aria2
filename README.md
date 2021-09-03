@@ -95,9 +95,23 @@ aria2c.exe     命令行主程序
 
 提示需WSL 2时请按照微软官方教程安装，建议下载Ubuntu20.04LTS
 #### 部署aria2-pro
-详细参考p3terx写的[教程](https://p3terx.com/archives/docker-aria2-pro.html)，但是代码演示示例适用于Linux，直接照搬会报错，把 \ 直接用空格代替，不回车直接写下一行代码
+详细参考p3terx写的[教程](https://p3terx.com/archives/docker-aria2-pro.html)，但是代码演示示例适用于Linux，/在Linux中为换行符，cmd中起同样作用的是^或不回车直接写下一行代码
 部署示例(请直接复制到cmd)：
-> docker run -d --name aria2-pro --restart unless-stopped --log-opt max-size=1m -e RPC_PORT=6800 -p6800:6800 -p 6888:6888 -p 6888:6888/udp -v D:\Download\aria2\conf:/config -v D:\Download\aria2:/downloads -e UMASK_SET=000 p3terx/aria2-pro
+
+> docker run -d --name aria2-pro --restart unless-stopped --log-opt max-size=1m -e RPC_PORT=6800 -p 6800:6800 -p 6888:6888 -p 6888:6888/udp -v D:\Download\aria2\conf:/config -v D:\Download\aria2:/downloads -e UMASK_SET=000 p3terx/aria2-pro
+
+或：
+>  docker run -d ^
+>      --name aria2-pro ^
+>      --restart unless-stopped ^
+>      --log-opt max-size=1m ^
+>      -e RPC_PORT=6800 ^
+>      -p 6800:6800 ^
+>      -p 6888:6888/udp ^
+>      -v D:\Download\aria2\conf:/config ^
+>      -v D:\Download\aria2:/downloads ^
+>      -e UMASK_SET=000 ^
+>      p3terx/aria2-pro
 
 需要注意这里文件下载位置在_D:\Download\aria2_，而且一旦设置后使用aria2的下载位置无法变更，设置RPC地址时只能使用_/downloads_，且记得填写RPC密码为P3TERX(自定义请参考教程)
 两个-v 的参数只能改在 : 之前的路径，不懂请百度docker目录映射
