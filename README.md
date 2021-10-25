@@ -2,6 +2,7 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/sjh0020/aria2?style=flat&logo=appveyor)](https://github.com/sjh0020/aria2/stargazers)
 ![GitHub Release (latest SemVer)](https://img.shields.io/github/v/release/sjh0020/aria2?style=flat&logo=appveyor)
+[![GitHub Forks](https://img.shields.io/github/forks/sjh0020/aria2?style=flat&logo=appveyor)](https://github.com/sjh0020/aria2/forkgazers)
 
 ## 目录
 
@@ -58,6 +59,8 @@ aria2c.exe     命令行主程序
 [完整列表](https://trackerslist.com/all_aria2.txt)
 
 [HTTP(S)列表](https://trackerslist.com/http_aria2.txt)
+
+### 注意：AriaNg里更改aria2的配置只限于本次使用，要真正地修改需自行修改aria2.conf
 
 ## 引用
 
