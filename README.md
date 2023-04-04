@@ -27,7 +27,7 @@
 
 - 具体见 [扩展配置页][]，可以跳转到 [官方中文 Readme][] 查看扩展特性以及常见问题  
 个人配置：
-![Aria2-Explorer 扩展配置个人设置](./docs/img/aria2-explore%20%E6%89%A9%E5%B1%95%E9%85%8D%E7%BD%AE%E9%A1%B5%E9%9D%A2.jpeg)
+![Aria2-Explorer 扩展配置个人设置](./docs/img/aria2-explore%20%E6%89%A9%E5%B1%95%E9%85%8D%E7%BD%AE%E9%A1%B5%E9%9D%A2.jpg)
 
 - ps：
   - 对比原来的添加到 Aria2 扩展，这个可以一直开着 `下载拦截`，当检测不到运行中的 Aria2 不会接管，而是调用浏览器自身的下载。
